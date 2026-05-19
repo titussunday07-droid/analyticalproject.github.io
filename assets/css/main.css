@@ -2633,7 +2633,7 @@ input, select, textarea {
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #0c0c0c;
+				background-color: #000000;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -3076,7 +3076,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #1a1819;
+						background: #047ff1;
 						color: #000000;
 						content: '\f0c9';
 						display: block;
