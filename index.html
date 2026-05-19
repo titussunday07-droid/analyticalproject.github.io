@@ -160,7 +160,10 @@
 							</section>
 
 						<!-- Four -->
-							<section id="four">
+							<!-- CONTACT SECTION -->
+
+<section id="four">
+
     <div class="container">
 
         <h3>Contact Me</h3>
@@ -172,100 +175,185 @@
             value-driven solutions.
         </p>
 
-        <!-- FORM START -->
+        <!-- CONTACT FORM -->
         <form 
             method="POST" 
             action="https://formspree.io/f/xdajkbqj"
+            class="contact-form"
         >
 
-            <!-- Optional Redirect After Submit -->
+            <!-- REDIRECT AFTER SUBMISSION -->
             <input 
                 type="hidden" 
                 name="_next" 
-                value="https://titussunday07-droid.github.io/analyticalproject.github.io/"
+                value="https://titussunday07-droid.github.io/analyticalproject.github.io/thankyou.html"
             >
 
-            <!-- Disable Captcha -->
+            <!-- DISABLE CAPTCHA -->
             <input 
                 type="hidden" 
                 name="_captcha" 
                 value="false"
             >
 
-            <div class="row gtr-uniform">
+            <div class="form-grid">
 
-                <!-- Name -->
-                <div class="col-6 col-12-xsmall">
+                <!-- NAME -->
+                <div class="form-group">
                     <input 
                         type="text" 
                         name="name" 
                         id="name" 
-                        placeholder="Name"
+                        placeholder="Your Name"
                         required
-                    />
+                    >
                 </div>
 
-                <!-- Email -->
-                <div class="col-6 col-12-xsmall">
+                <!-- EMAIL -->
+                <div class="form-group">
                     <input 
                         type="email" 
                         name="email" 
                         id="email" 
-                        placeholder="Email"
+                        placeholder="Your Email"
                         required
-                    />
+                    >
                 </div>
 
-                <!-- Subject -->
-                <div class="col-12">
+                <!-- SUBJECT -->
+                <div class="form-group full-width">
                     <input 
                         type="text" 
                         name="subject" 
                         id="subject" 
                         placeholder="Subject"
                         required
-                    />
+                    >
                 </div>
 
-                <!-- Message -->
-                <div class="col-12">
+                <!-- MESSAGE -->
+                <div class="form-group full-width">
                     <textarea 
                         name="message" 
                         id="message" 
-                        placeholder="Message" 
                         rows="6"
+                        placeholder="Write your message here..."
                         required
                     ></textarea>
                 </div>
 
-                <!-- Buttons -->
-                <div class="col-12">
-                    <ul class="actions">
+            </div>
 
-                        <li>
-                            <input 
-                                type="submit" 
-                                class="primary" 
-                                value="Send Message" 
-                            />
-                        </li>
+            <!-- BUTTONS -->
+            <div class="button-group">
 
-                        <li>
-                            <input 
-                                type="reset" 
-                                value="Reset Form" 
-                            />
-                        </li>
+                <button type="submit" class="btn-primary">
+                    Send Message
+                </button>
 
-                    </ul>
-                </div>
+                <button type="reset" class="btn-secondary">
+                    Reset Form
+                </button>
 
             </div>
+
         </form>
-        <!-- FORM END -->
 
     </div>
+
 </section>
+
+<!-- CONTACT FORM STYLING -->
+
+<style>
+
+#four{
+    padding:60px 20px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+.contact-form{
+    margin-top:30px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    outline:none;
+    transition:0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    border-color:#38bdf8;
+}
+
+.full-width{
+    grid-column:span 2;
+}
+
+.button-group{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.btn-primary{
+    background:#38bdf8;
+    color:white;
+    border:none;
+    padding:14px 24px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.btn-primary:hover{
+    background:#0284c7;
+}
+
+.btn-secondary{
+    background:#555;
+    color:white;
+    border:none;
+    padding:14px 24px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.btn-secondary:hover{
+    background:#333;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+.form-grid{
+    grid-template-columns:1fr;
+}
+
+.full-width{
+    grid-column:span 1;
+}
+
+.button-group{
+    f
 
 						<!-- Five -->
 						<!--
